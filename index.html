@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
     <title>Osaha Video Chat</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
     <h3>Osaha Video Chat</h3>
-    <video id="my-video" width="200px" autoplay muted playsinline></video>
-    <p id="my-id">id</p>
-
-    <textarea id="their-id"></textarea>
-    <button id="make-call">Make Call</button>
-    <video id="their-video" width="200px" autoplay muted playsinline></video>
+    <div>
+      <video id="my-video" width="200px" autoplay muted playsinline></video>
+      <p id="my-id">id</p>
+      <textarea id="their-id"></textarea>
+      <button id="make-call">Make Call</button>
+      <br>
+      <video id="their-video" width="200px" autoplay muted playsinline></video>
+    </div>
 
     <script>
       let localStream;
